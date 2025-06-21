@@ -44,6 +44,11 @@
   --fs-2xl: 2.5rem; /* 40px */
 
   --px-lg: 1.5rem; /* 24px */
+  
+  --py-base:1rem;
+  --py-lg:1.5rem;
+  --py-xl: 3rem;
+
 }
 
 html {
@@ -95,6 +100,10 @@ ul[role='list'] {
     --fs-2xl: 3.25rem; 
 
     --px-lg: 1.5rem;
+
+    --py-base:1rem;
+    --py-lg: 2rem;
+    --py-xl: 4.5rem;
   }
 }
 /* Tela 1080 */
@@ -105,5 +114,9 @@ ul[role='list'] {
     --fs-2xl: 4rem;
 
     --px-lg: 2rem;
+    
+    --py-base:1.5rem;
+    --py-lg: 2.5rem;
+    --py-xl: 5rem;
   }
 }
