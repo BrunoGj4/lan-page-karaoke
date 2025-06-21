@@ -1,0 +1,19 @@
+.container {
+  --max-width: 375px;
+  width: min(var(--max-width), 100% - var(--px-lg) * 2);
+  margin: 0 auto;
+
+  border: solid 1px violet;
+}
+
+@media (width >= 48em){
+  .container {
+    --max-width: 48rem;
+  }
+}
+
+@media (width >= 80em){
+  .container {
+    --max-width: 80rem;
+  }
+}
