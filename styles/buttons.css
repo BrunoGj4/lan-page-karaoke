@@ -69,9 +69,10 @@ novo modelo
     color: transparent;
 
     position: relative;
-    z-index: 1;
+    z-index: 1;    
   }
 }
+
 
 @media (width >= 48em) {
   .btn-sm {
