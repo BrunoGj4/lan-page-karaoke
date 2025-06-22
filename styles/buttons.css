@@ -24,11 +24,12 @@ novo modelo
 
 }
   .btn:hover{
-    background: linear-gradient(
+    --btn-bg-color: linear-gradient(
       90deg,
       var(--brand-color-secondary) 0%,
       var(--brand-color-primary) 100%
     );
+    background: var(--btn-bg-color);
     color: var(--surface-color);
   }
 /* configurando os 3 tipos de botões */
@@ -46,3 +47,27 @@ novo modelo
     font-size: var(--fs-lg);
 
   }
+
+.btn[aria-label] {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    inset: 0.09375rem;
+    background-color: var(--bg-color);
+    
+  }
+
+  &::after{
+    content: attr(aria-label);
+    background: var(--btn-bg-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    position: relative;
+    z-index: 1;
+  }
+}
