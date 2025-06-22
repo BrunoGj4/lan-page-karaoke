@@ -1,0 +1,41 @@
+#smartphones-img{
+  margin-top: 5rem;
+  background: url(../assets/icons/bg-hero-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  height: 20rem;
+}
+
+section {
+  & header {
+    & strong {
+      display: block;
+      font: var(--fw-md) var(--fs-sm)/100% var(--ff-sans);
+      letter-spacing: 0.09em;
+      text-decoration: uppercase;
+
+      color: var(--brand-color-primary);
+    }
+    & h2 {
+      margin-top:.5rem;
+
+    }
+
+    & p {
+      margin-top: .5rem;
+      color: var(--brand-color-secondary);
+    }
+  }
+}
+
+@media (width >= 48em) {
+  #smartphones-img {
+    display:none;
+  }
+}
+
+@media (width >= 80em) {
+  #smartphones-img {
+    display:none;
+  }
+}
