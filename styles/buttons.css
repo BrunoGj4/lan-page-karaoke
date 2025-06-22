@@ -31,6 +31,9 @@ novo modelo
     );
     background: var(--btn-bg-color);
     color: var(--surface-color);
+
+    -webkit-background-clip: initial;
+    background-clip: initial;
   }
 /* configurando os 3 tipos de botões */
   .btn-sm {
@@ -39,13 +42,11 @@ novo modelo
   }
   .btn-md {
     padding: .75rem 1.5rem;
-    font-size: var(--fs-md);
-    
+    font-size: var(--fs-md);    
   }
   .btn-lg {
     padding: 1rem 2rem;
     font-size: var(--fs-lg);
-
   }
 
 .btn[aria-label] {
@@ -69,5 +70,16 @@ novo modelo
 
     position: relative;
     z-index: 1;
+  }
+}
+
+@media (width >= 48em) {
+  .btn-sm {
+    padding: .75rem 1.5rem;
+    font-size: var(--fs-md);    
+  }
+  .btn-md {
+    padding: 1rem 2rem;
+    font-size: var(--fs-lg);
   }
 }
